@@ -1,0 +1,10 @@
+a{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav{
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+}
