@@ -1,10 +1,28 @@
-a{
-    margin-left: 20px;
-    margin-right: 20px;
+.dogs img{
+    width: 400px;
+    height: 400px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-nav{
-    background-color: lightblue;
+img:hover{
+    outline: 5px solid blueviolet;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+    border: 2px solid black;
+}
+
+body{
+    background-color: whitesmoke;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#root{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }

@@ -2,6 +2,7 @@
   "name": "dogfinder",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/dogs",
   "dependencies": {
     "@testing-library/jest-dom": "*",
     "@testing-library/react": "*",
