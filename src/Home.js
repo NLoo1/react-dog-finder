@@ -1,21 +1,15 @@
 import { Route, Routes, Link, Navigate, useLocation } from "react-router-dom";
 import { DogDetails } from './routesList';
 import './Home.css'
+import dukeImage from './images/duke.jpg';
+import perryImage from './images/perry.jpg';
+import whiskeyImage from './images/whiskey.jpg';
 
 function Home() {
   const location = useLocation();
   return (
     <div className="VendingMachine">
-      {/* <nav>
-        {location.pathname == '/dogs' &&
-            <div>
-                <Link to="/dogs/duke" >Duke</Link>
-                <Link to="/dogs/perry" >Perry</Link>
-                <Link to="/dogs/whiskey" >Whiskey</Link>
-            </div>
-            
-        }
-      </nav> */}
+
       {location.pathname === '/dogs' &&
         <h1>Choose a dog</h1>}
       <Routes>
@@ -24,9 +18,10 @@ function Home() {
       </Routes>
 
       <div className="dogs">
-        <img src="./duke.jpg" />
-        <img src="./perry.jpg" />
-        <img src="./whiskey.jpg" />
+        {console.log(location.pathname)}
+        <Link to="/dogs/duke" ><img src={dukeImage} /></Link>
+        <Link to="/dogs/perry" ><img src={perryImage} /></Link>
+        <Link to="/dogs/whiskey" ><img src={whiskeyImage} /></Link>
       </div>
     </div>
   );
